@@ -1,0 +1,850 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c4c4c4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  color: white;
+  padding: 10px 20px;
+  gap: 5px;
+}
+
+h1 span {
+  color: red;
+}
+
+header .categorias,
+footer .categorias {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  padding: 10px 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 10px;
+}
+
+.card {
+  color: #ff8588;
+  font-size: 25px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  display: flex;
+}
+
+.contenedor {
+  position: relative;
+}
+
+.contenedor img {
+  width: 100%;
+  display: block;
+}
+.descuento {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  font-size: 35px;
+  color: white;
+}
+.descuento span {
+  color: red;
+}
+
+.comprar {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  border-radius: 10px;
+  background: red;
+  width: 150px;
+  height: 60px;
+}
+
+.botones span {
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 15px 30px;
+}
+
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.tarjetas-contenedor {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+}
+.tarjeta {
+  padding: 40px;
+  background-color: white;
+}
+
+.otras-tarjetas {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 25px;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  color: white;
+  align-items: center;
+  padding: 50px;
+}
+
+.redes {
+  font-size: 30px;
+  text-align: center;
+}
+.twitter {
+  color: #14aed0;
+  padding: 10px;
+}
+
+.face {
+  color: #1476d0;
+  padding: 10px;
+}
+.insta {
+  color: #ce0cff;
+  padding: 10px;
+}
+
+h4 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.derechos {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  padding: 15px;
+}
+
+
+@media (max-width: 1300px) {
+ 
+body {
+  background-color: #c4c4c4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  color: white;
+  padding: 10px 20px;
+  gap: 5px;
+}
+
+h1 span {
+  color: red;
+}
+
+header .categorias,
+footer .categorias {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  padding: 10px 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 10px;
+}
+
+.card {
+  color: #ff8588;
+  font-size: 25px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  display: flex;
+}
+
+.contenedor {
+  position: relative;
+  display:flex;
+}
+
+.contenedor img {
+  width: 100%;
+  display:inline-block;
+  display:flex;
+}
+.descuento {
+  position: absolute;
+  text-align:center;
+ /* top: 40%;*/
+ top:30%;
+ left: 20%;
+  /*font-size: 35px;*/
+  font-size: 130%;
+  color: white;
+  align-items: center;
+  max-width:80%;
+}
+.descuento span {
+  color: red;
+}
+
+.comprar {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  border-radius: 10px;
+  background: red;
+  width: 150px;
+ /* height: 60px;*/
+  height: auto;
+
+}
+
+.botones span {
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 15px 30px;
+}
+
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.tarjetas-contenedor {
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+}
+.tarjeta {
+  padding: 40px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.otras-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 25px;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  color: white;
+  align-items: center;
+  padding: 1rem;
+}
+
+.redes {
+  font-size: 30px;
+  text-align: center;
+}
+.twitter {
+  color: #14aed0;
+  padding: 1rem;
+}
+
+.face {
+  color: #1476d0;
+  padding: 1rem;
+}
+.insta {
+  color: #ce0cff;
+  padding: 1rem;
+}
+
+h4 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.derechos {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  padding: 15px;
+}
+}
+
+
+@media (max-width: 1000px) {
+ 
+
+body {
+  background-color: #c4c4c4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  color: white;
+  padding: 10px 20px;
+  gap: 5px;
+}
+
+h1 span {
+  color: red;
+}
+
+header .categorias,
+footer .categorias {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  padding: 10px 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 10px;
+}
+
+.card {
+  color: #ff8588;
+  font-size: 25px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  display: flex;
+}
+
+.contenedor {
+  position: relative;
+  display:flex;
+}
+
+.contenedor img {
+  width: 100%;
+  display:inline-block;
+  display:flex;
+}
+.descuento {
+  position: absolute;
+  text-align:center;
+ /* top: 40%;*/
+ top:30%;
+ left: 20%;
+  /*font-size: 35px;*/
+  font-size: 130%;
+  color: white;
+  align-items: center;
+  max-width:80%;
+}
+.descuento span {
+  color: red;
+}
+
+.comprar {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  border-radius: 10px;
+  background: red;
+  width: 150px;
+ /* height: 60px;*/
+  height: auto;
+
+}
+
+.botones span {
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 15px 30px;
+}
+
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.tarjetas-contenedor {
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+}
+.tarjeta {
+  padding: 40px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.otras-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 25px;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  color: white;
+  align-items: center;
+  padding: 1rem;
+}
+
+.redes {
+  font-size: 30px;
+  text-align: center;
+}
+.twitter {
+  color: #14aed0;
+  padding: 1rem;
+}
+
+.face {
+  color: #1476d0;
+  padding: 1rem;
+}
+.insta {
+  color: #ce0cff;
+  padding: 1rem;
+}
+
+h4 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.derechos {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  padding: 15px;
+}
+}
+
+
+
+@media (max-width: 460px) {
+  
+
+body {
+  background-color: #c4c4c4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  color: white;
+  padding: 10px 20px;
+  gap: 5px;
+}
+
+h1 span {
+  color: red;
+}
+
+header .categorias,
+footer .categorias {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  padding: 10px 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 10px;
+}
+
+.card {
+  color: #ff8588;
+  font-size: 25px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  display: flex;
+}
+
+.contenedor {
+  position: relative;
+  display:flex;
+}
+
+.contenedor img {
+  width: 100%;
+  display:inline-block;
+  display:flex;
+}
+.descuento {
+  position: absolute;
+  text-align:center;
+ /* top: 40%;*/
+ top:30%;
+ left:0;
+  /*font-size: 35px;*/
+  font-size: 100%;
+  color: white;
+  align-items: center;
+  max-width: 80%;
+}
+.descuento span {
+  color: red;
+}
+
+.comprar {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  border-radius: 10px;
+  background: red;
+  width: 150px;
+ /* height: 60px;*/
+  height: auto;
+
+}
+
+.botones span {
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 15px 30px;
+}
+
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.tarjetas-contenedor {
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+}
+.tarjeta {
+  padding: 40px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.otras-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 25px;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  color: white;
+  align-items: center;
+  padding: 1rem;
+}
+
+.redes {
+  font-size: 30px;
+  text-align: center;
+}
+.twitter {
+  color: #14aed0;
+  padding: 1rem;
+}
+
+.face {
+  color: #1476d0;
+  padding: 1rem;
+}
+.insta {
+  color: #ce0cff;
+  padding: 1rem;
+}
+
+h4 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.derechos {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  padding: 15px;
+}
+
+
+@media (max-width: 380px) {
+  
+
+body {
+  background-color: #c4c4c4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  color: white;
+  padding: 10px 20px;
+  gap: 5px;
+  Font-size:80%;
+}
+
+h1 span {
+  color: red;
+}
+
+header .categorias,
+footer .categorias {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  padding: 10px 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 10px;
+}
+
+.card {
+  color: #ff8588;
+  font-size: 25px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  display: flex;
+}
+
+.contenedor {
+  position: relative;
+  display:flex;
+}
+
+.contenedor img {
+  width: 100%;
+  display:inline-block;
+  display:flex;
+}
+.descuento {
+  position: absolute;
+  text-align:center;
+ /* top: 40%;*/
+ top:10%;
+ left:10px;
+  /*font-size: 35px;*/
+  font-size: 70%;
+  color: white;
+  align-items: center;
+  max-width: 80%;
+}
+.descuento span {
+  color: red;
+}
+
+.comprar {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  border-radius: 10px;
+  background: red;
+  width: 150px;
+ /* height: 60px;*/
+  height: auto;
+
+}
+
+.botones span {
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 90%;
+  padding: 15px 30px;
+}
+
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.tarjetas-contenedor {
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+}
+.tarjeta {
+  padding: 40px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.otras-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 25px;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  color: white;
+  align-items: center;
+  padding: 1rem;
+}
+
+.redes {
+  font-size: 30%;
+  text-align: center;
+}
+.twitter {
+  color: #14aed0;
+  padding: 1rem;
+}
+
+.face {
+  color: #1476d0;
+  padding: 1rem;
+}
+.insta {
+  color: #ce0cff;
+  padding: 1rem;
+}
+
+h4 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.derechos {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  padding: 15px;
+}
+}
